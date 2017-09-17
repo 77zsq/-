@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> 产品分类 - 慢慢买比价网</title>
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../node_modules/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="../../../dist/css/getcategory.min.css">
+    <link rel="stylesheet" href="../../../dist/css/getbrand.min.css">
+
+</head>
+
+<body>
+    <div id="ctl00_header1" class="header1 clearfix1">
+        <div class="fl logo">
+            <a href="#" title="慢慢买比价网--手机版">
+                <img src="../../../public/初始图片/header_logo.png" alt="慢慢买比价网--手机版"></a>
+        </div>
+        <div class="fr appdown">
+            <a href="" onclick="trackEvent('header下载');" title="手机app下载">
+                <img src="../../../public/初始图片/header_app.png" alt="手机app下载"></a>
+        </div>
+    </div>
+    <!-- 搜索 -->
+    <form action="" method="" name="">
+        <div id="ctl00_searchmmb" class="search1 clearfix1">
+            <div class="searchtxt">
+                <input value="" name="" type="search" placeholder="请输入你想比价的商品">
+            </div>
+            <div class="searchbtn">
+                <input type="submit" value="搜索">
+            </div>
+        </div>
+    </form>
+
+    <form name="aspnetForm" method="post" action="" id="aspnetForm">
+        <div class="nav">
+            <a href="#">首页</a>
+            <a href="#">品牌大全</a>
+        </div>
+        <div>
+            <div style="font-size: 16px;color:#874604;height: 40px; padding-left:10px; line-height: 40px;margin:10px 5px; border:1px solid #ccc; background-color:#eee;">热门品牌排行</div>
+            <div style="padding:0px 10px;" class="getbrand">
+                <div class='fl_t'><a href="distop.aspx?id=4">平板电视十大品牌</a></div>
+            </div>
+        </div>
+    </form>
+
+    <script type="text/tpl" id="getbrand">
+        {{each $data getbrand i}}
+        <div class='fl_t'><a href="distop.aspx?id=4">{{getbrand.brandTitle}}</a></div>
+        {{/each}}
+    </script>
+
+    <!-- 所有第三方包合并好的js -->
+    <script src="../../../dist/js/lib.js"></script>
+    <!-- 该页面独有的js -->
+    <script src="../../../dist/js/getbrand/getbrand.js"></script>
+</body>
+
+</html>

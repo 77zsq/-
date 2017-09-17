@@ -1,0 +1,45 @@
+.model .hd {
+  color: #874604;
+  background: #f3f3f3;
+  border: 1px solid #c8c8c8;
+  border-left: none;
+  border-right: none;
+}
+.model .hd h3 {
+  line-height: 36px;
+  font-size: 14px;
+  padding-left: 10px;
+}
+.model ul li {
+  border-bottom: 1px solid #e7e7e7;
+  padding: 10px;
+}
+.model ul li a {
+  display: block;
+  text-decoration: none;
+}
+.model ul li a em {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  line-height: 20px;
+  vertical-align: top;
+  margin: 0 10px 0 0;
+  font-size: 14px;
+}
+.model ul li a em.top1 {
+  background: #f10e0e;
+}
+.model ul li .inner {
+  display: inline-block;
+}
+.model ul li .tit {
+  color: #000000;
+}
+.model ul li p {
+  font-size: 12px;
+  color: #999999;
+  margin-top: 3px;
+}

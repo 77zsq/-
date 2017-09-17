@@ -1,0 +1,24 @@
+.nav {
+  height: 36px;
+  background-color: #ebebeb;
+  border-top: solid 1px #ebebeb;
+  border-bottom: 1px solid #ccc;
+  line-height: 36px;
+  padding-left: 8px;
+  font-size: 14px;
+}
+.nav a {
+  text-decoration: none;
+  color: #5a5a5a;
+}
+.fl_t a {
+  background: url('../../public/初始图片/arrow1.gif') right center no-repeat;
+  height: 40px;
+  line-height: 40px;
+  color: #000;
+  font-size: 16px;
+  display: block;
+  padding-left: 0px;
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+}

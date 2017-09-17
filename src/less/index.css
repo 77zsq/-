@@ -1,0 +1,234 @@
+@charset "utf-8";
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Microsoft YaHei";
+}
+html,
+body {
+  height: 100%;
+}
+ol,
+ul {
+  list-style: none;
+}
+input,
+select,
+form images,
+button {
+  vertical-align: middle;
+  -webkit-tap-highlight-color: transparent;
+  outline: 0;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  zoom: 1;
+}
+textarea {
+  width: 95%;
+}
+a {
+  color: #000;
+  text-decoration: none !important;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+em,
+i {
+  font-style: normal;
+}
+img {
+  border: none;
+}
+input,
+img {
+  vertical-align: middle;
+}
+body {
+  color: #000;
+  font-family: "Microsoft YaHei";
+  background: #FFF;
+  overflow-x: hidden;
+}
+body {
+  background-color: #f5f5f5;
+}
+#header {
+  height: 50px;
+  background-color: #ff841d;
+  padding: 10px;
+}
+#header > .logo {
+  margin-left: 5px;
+}
+#header > .logo > img {
+  /* 图片设计的大些 在手机上图片宽度高度要缩小一倍（二倍图） 因为手机分辨率高 */
+  /* 经验：以后一般图片大小设置为原图一半 */
+  height: 25px;
+}
+#header > .app {
+  float: right;
+  margin-top: -2px;
+}
+#header > .app > img {
+  height: 34px;
+}
+#search {
+  background-color: #fff;
+  padding: 10px;
+}
+#search > form {
+  /* 重要：form右边挤出70px放搜索按钮 左边让搜索框宽度100% */
+  padding-right: 70px;
+  position: relative;
+}
+#search > form > input[type="search"] {
+  width: 100%;
+  height: 30px;
+  border-radius: 15px;
+  border: 0;
+  background-color: #f5f5f5;
+  padding-left: 15px;
+}
+#search > form > input[type="submit"] {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 63px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #ff841d;
+  color: #fff;
+  border: 0;
+}
+#menu {
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #fff;
+}
+#menu > .row > div > a {
+  text-align: center;
+  display: block;
+  margin-top: 10px;
+}
+#menu > .row > div > a > img {
+  width: 50px;
+  height: 50px;
+}
+#menu > .row > div > a > p {
+  font-size: 12px;
+  margin: 5px 0;
+}
+#menu > .row > div:nth-last-child(-n+4) {
+  display: none;
+}
+#recommen {
+  background-color: #fff;
+}
+#recommen > .recommen-title {
+  background-color: #ff9000;
+  position: relative;
+}
+#recommen > .recommen-title > h5 {
+  height: 35px;
+  line-height: 35px;
+  font-size: 16px;
+  color: #fff;
+  padding-left: 20px;
+}
+#recommen > .recommen-title > img {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+}
+#recommen > .recommen-list > .media {
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+}
+#recommen > .recommen-list > .media > .media-left > img {
+  width: 100px;
+  height: 100px;
+}
+#recommen > .recommen-list > .media > .media-body > .price {
+  color: #e92322;
+}
+#recommen > .recommen-list > .media > .media-body > .from {
+  float: left;
+  color: #666;
+  font-size: 12px;
+}
+#recommen > .recommen-list > .media > .media-body > .comment {
+  float: right;
+  margin-right: 10px;
+  color: #666;
+  font-size: 12px;
+}
+#recommen > .recommen-list > .media > .media-body > .comment > .icon-comment {
+  /* svg图片  在官网复制所以源码 */
+  background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024' width='17'><path fill='#a1a1a1' d='M924.504962 664.898711 97.819886 664.898711c-17.557888 0-31.795147-14.241352-31.795147-31.795147l0-508.732583c0-17.557888 14.238282-31.792077 31.795147-31.792077l241.198387 0 149.664671-149.661601c6.209422-6.212492 14.34266-9.31618 22.478967-9.31618s16.269545 3.102664 22.479991 9.31618L683.306574 92.57788l241.198387 0c17.557888 0 31.795147 14.235213 31.795147 31.792077L956.300109 633.10254C956.300109 650.657358 942.061826 664.898711 924.504962 664.898711zM892.708791 156.169197l-222.569098 0c-8.428973 0-16.518209-3.354398-22.478967-9.31618l-136.498814-136.494721-136.498814 136.494721c-5.961782 5.961782-14.051017 9.31618-22.479991 9.31618l-222.569098 0L129.61401 601.304324l763.093758 0L892.707768 156.169197zM288.592814 378.735226m-63.591317 0a62.143 62.143 0 1 0 127.182634 0 62.143 62.143 0 1 0-127.182634 0ZM511.161912 378.735226m-63.591317 0a62.143 62.143 0 1 0 127.182634 0 62.143 62.143 0 1 0-127.182634 0ZM733.73101 378.735226m-63.591317 0a62.143 62.143 0 1 0 127.182634 0 62.143 62.143 0 1 0-127.182634 0Z' transform='translate(0, 812) scale(1, -1)'/></svg>");
+  width: 14px;
+  height: 15px;
+  display: inline-block;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+#recommen > .recommen-more {
+  padding: 10px;
+}
+#recommen > .recommen-more > a {
+  width: 100%;
+  border: 1px solid #ccc;
+  display: block;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  border-radius: 5px;
+}
+/* 底部 */
+#footer > .row > div {
+  text-align: center;
+  border: 1px solid #ccc;
+  height: 30px;
+  line-height: 30px;
+}
+#footer > .row > div > a > img {
+  width: 15px;
+  height: 15px;
+}
+#footer > .row > div + div {
+  border-left: 0;
+}
+#footer > p {
+  margin: 5px 0;
+  text-align: center;
+  font-size: 12px;
+}
+#footer > p > a:first-child {
+  color: red;
+}
